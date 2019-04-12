@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const hbs = require('express-handlebars')
-const bodyParser = require('body-parser')
+// const bodyParser = require('body-parser')
 require('dotenv').config()
 
 const express = require('express');
@@ -18,8 +18,8 @@ app.engine('hbs', hbs({ extname: 'hbs' }));
 app.set('views', path.join(__dirname, '/src/views/'))
 app.set('view engine', 'hbs')
 
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended: false }))
+// app.use(bodyParser.json())
 
 app.use(express.static(__dirname + '/public/'))
 
