@@ -5,11 +5,17 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    {{> online-users }}
+    <header>
+      <span id="logo">Chat App</span>
+      {{> online-users }}
+    </header>
+    <main>
 
-    {{> messagelist }}
-    {{> messageForm }}
-    
-    {{> scripts }}
+      {{> messagelist }}
+      {{> messageForm }}
+    </main>
+    <footer>
+      {{> scripts }}
+    </footer>
   </body>
 </html>

@@ -4,13 +4,63 @@
     box-sizing: border-box; 
 }
 body { 
+    background-color: rgb(235, 233, 237)
+}
+form {
+    font-family: 'Roboto', sans-serif;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem;
+}
+form input {
+    width: 100%;
+    padding: .5rem;
+    margin: .25rem 0;
+    border: none;
+    font-size: 1.1rem;
+}
+form input[type="submit"] {
+    background-color: rgb(44, 137, 247);
+    color:rgb(246, 245, 251);
+    width: 20%;
+    display: block;
 }
 
+#loginForm {
+    position: relative;
+    top: 40vh;
+}
+#messageForm {
+    position: absolute;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    bottom: 2rem;
+}
+#logo {
+    width: 40%;
+}
+ul {
+    width: 100%;
+}
+li {
+    background-color: rgb(240, 239, 245);
+    padding: 1rem;  
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: .25rem 1rem;
+    display: block;
+    height: 100%;
+    width: auto;
+    border-radius: 5px;
+}
 
-
-#online-users > div {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 100%;
-    background: peachpuff;
+.message-user {
+    font-size: 1rem;
+}
+.message-text {
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: capitalize;
 }
