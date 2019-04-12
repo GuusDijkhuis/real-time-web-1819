@@ -23,7 +23,7 @@ app.use(bodyParser.json())
 app.use(express.static(__dirname + '/public/'))
 
 app.get('/', (req, res, next) => {
-    res.render('login');
+    res.render('chat');
 })
 
 app.get('/chat', (req, res, next) => {
@@ -33,7 +33,7 @@ app.get('/login', (req, res, next) => {
     res.render('login');
 })
 app.post('/chat', (req, res, next) => {
-    res.redirect('/chat')
+    res.redirect('chat')
 });
 
 io.on('connection', function(socket){
