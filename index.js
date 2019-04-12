@@ -3,6 +3,7 @@ const path = require('path')
 
 const hbs = require('express-handlebars')
 const bodyParser = require('body-parser')
+require('dotenv').config()
 
 const express = require('express');
 const app = express()
@@ -50,6 +51,6 @@ io.on('connection', function(socket){
     });
 });
 
-http.listen(port, function(){
+http.listen(process.env.PORT || 3000, function(){
     console.log(`listening on port ${port}`);
 });
